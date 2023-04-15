@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "22f0e798-1d27-4670-b0af-6fbd9e42961b",
+		"name": "Entrega1Proyecto",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18830372"
+	},
+	"item": [
+		{
+			"name": "Ping Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/users/ping",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"users",
+						"ping"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Usuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"Krishtian2\",\n    \"password\": \"123456789\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/users/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Iniciar Sesión",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"Krishtian2\",\n    \"password\": \"123456789\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/users/auth",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"users",
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Agregar Mail",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY4MTUzODUxMywianRpIjoiMTNkYTRlZDctYjU4NS00MzQyLThiNjEtNTBkZmU2OWNhMjkwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MiwibmJmIjoxNjgxNTM4NTEzLCJleHAiOjE2ODE1Mzk0MTN9.tn7_yIi19HhqBVqx6KN3fZY3gLiTlJo3mohDzkJEtnU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"Krishtian7@uniandes.edu.co\",\n    \"app_uuid\": \"06d03a8c-db51-11ed-afa1-0242ac120002\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/blacklists",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"blacklists"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Email",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY4MTUzODUxMywianRpIjoiMTNkYTRlZDctYjU4NS00MzQyLThiNjEtNTBkZmU2OWNhMjkwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MiwibmJmIjoxNjgxNTM4NTEzLCJleHAiOjE2ODE1Mzk0MTN9.tn7_yIi19HhqBVqx6KN3fZY3gLiTlJo3mohDzkJEtnU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:5000/blacklists/Krishtian7@uniandes.edu.co",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"blacklists",
+						"Krishtian7@uniandes.edu.co"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
